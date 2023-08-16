@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Panel de Control</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/dashboard">Panel de Control</a></li>
+                <li><a href="/logout">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="dashboard-section">
+            <h2>Bienvenido al Panel de Control</h2>
+            <p>¡Hola {{currentUser.username}}! Aquí puedes administrar tu cuenta y opciones.</p>
+        </section>
+        
+        <!-- Otras secciones del panel de control podrían ir aquí -->
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Mi Aplicación</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

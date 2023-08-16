@@ -1,2 +1,19 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registro de Usuario</title>
+</head>
+<body>
+  <h1>User Register</h1>
+  {{!-- <form action="/register" method="POST"> --}}
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+    <button id="signup" class="button"><a href="/auth/signup">signup</a></button>
+    <button id="login" class="button"><a href="/auth/login">login</a></button>
+<button id="logout" class="button"><a href="/auth/logout">logout</a></button>
+  {{!-- </form> --}}
+</body>
+</html>
