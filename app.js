@@ -33,9 +33,18 @@ app.use('/', index);
 const authRoutes = require("./routes/auth.routes");
 app.use("/auth", authRoutes);
 
+const dashboardRoutes = require("./routes/dashboard.routes");
+app.use("/dashboard", dashboardRoutes);
+
+const mainRoutes = require("./routes/main.routes");
+app.use("/main", mainRoutes);
+
+const privateRoutes = require("./routes/private.routes");
+app.use("/private", privateRoutes);
+
+
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);
-
 
 module.exports = app;
 
